@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaman: Trident of Darkness - Pine City Mall Cinemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aquaman: Trident of Darkness - Pine City Mall Cinemas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="stores.html">Shops</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="movie-details">
+        <img src="images/Movies/Aquaman.jpg" alt="Aquaman: Trident of Darkness Poster">
+        <div class="description">
+            <h2>Description</h2>
+            <p>2 HR 20 MIN | PG-13</p>
+            <p>After failing to defeat Aquaman the first time, Black Manta wields the power of the mythic Black Trident to unleash an ancient and malevolent force. Hoping to end his reign of terror, Aquaman forges an unlikely alliance with his brother, Orm, the former king of Atlantis. Setting aside their differences, they join forces to protect their kingdom and save the world from irreversible destruction.</p>
+            <p>Directed by: James Wan</p>
+            <p>Starring: Jason Momoa, Patrick Wilson, Michael Keaton, Nicole Kidman</p>
+        </div>
+    </section>
+
+    <section class="trailer">
+        <h2>Trailer</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FV3bqvOHRQo" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="booking">
+        <h2>Select a Date</h2>
+        <div class="date-options">
+            <select name="date" id="date">
+                <option value="2024-02-10">Feb 10</option>
+                <option value="2024-02-11">Feb 11</option>
+                <option value="2024-02-12">Feb 12</option>
+            </select>
+        </div>
+
+        <h2>Select a Showtime</h2>
+        <div class="showtime-options">
+            <select name="showtime" id="showtime">
+                <option value="10:00">10:00 AM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="15:30">3:30 PM</option>
+            </select>
+        </div>
+
+        <button onclick="bookTicket()">Book</button>
+    </section>
+
+    <script>
+        function bookTicket() {
+            var selectedDate = document.getElementById("date").value;
+            var selectedShowtime = document.getElementById("showtime").value;
+            alert("You have selected " + selectedShowtime + " on " + selectedDate);
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Pine City Mall Cinemas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
